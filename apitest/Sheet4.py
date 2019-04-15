@@ -3,7 +3,7 @@ from apitest.main import current_game, score, score_list, current_game_with_scor
 import re
 
 # Location of the file
-path = 'C:/Users/melikyan.tatevik/Documents/Megafeed/Soccer-old.xlsx'
+path = ''
 
 
 # To open the workbook

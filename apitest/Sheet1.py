@@ -6,7 +6,7 @@ import openpyxl
  #import re
 
 # Location of the file
-path = 'C:/Users/melikyan.tatevik/Documents/Megafeed/Soccer-old.xlsx'
+path = ''
 
 # To open the workbook
 wb = openpyxl.load_workbook(path)

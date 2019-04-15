@@ -1,9 +1,9 @@
 import json
 import socket
 
-HOST, PORT = "tcptestapi.megafeed.com", 3126
+HOST, PORT = "",
 
-message1 = '{"Command": "auth","Params":{"UserName":"operator4","Password":"12345678"}}^'
+message1 = '{"Command": "auth","Params":{"UserName":"","Password":""}}^'
 message2 = u'{"Command":"subscribeGames","Params":{"games":[263924]}}^'
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -16,7 +16,7 @@ try:
 	received = sock.recv(1024)
 	
 	sock.send(bytes(message2, 'utf-8'))
-	received1 = sock.recv(10240000)
+	received1 = sock.recv(1024)
 	rec = str(received1, 'utf-8')
 
 finally:
